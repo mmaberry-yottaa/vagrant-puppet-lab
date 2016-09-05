@@ -16,10 +16,14 @@
 * edit /etc/puppet/puppet.conf
   - dns_alt_names = puppet,puppet.example.com 
   - comment out templatedir=$confdir/templates
+* edit /etc/hosts 
+  - 10.20.1.3       www.example.com www
 * service puppetmaster start
 
 # Set Up the PuppetNode
 * puppet agent is already installed 
+* edit /etc/hosts 
+  - 10.20.1.2       puppetmaster.example.com puppetmaster
 * edit /etc/puppet/puppet.conf to point to the puppetmaster 
   - server= puppetmaster.example.com 
  * puppet agent -t

@@ -1,12 +1,16 @@
-# vagrant-puppet-lab
+# Set Up Host Machine
 
+* Create environment variables 
+  - launchctl setenv variable "value" 
+  - launchctl getenv variable
+  - launchctl unset variable
 * git clone https://github.com/mikemaberry/vagrant-puppet-lab.git
 * cd vagrant-puppet-lab
 * vagrant plugin install vagrant-hostsupdater (https://github.com/cogitatio/vagrant-hostsupdater) 
 * vagrant plugin install vagrant-hosts (https://github.com/oscar-stack/vagrant-hosts)
 * vagrant up
 
-# Set Up the PuppetMaster 
+# Set Up the PuppetMaster VM 
 * vagrant ssh puppetmaster
 * wget https://apt.puppetlabs.com/puppetlabs-release-trusty.deb 
 * dpkg -i puppetlabs-release-trusty.deb
@@ -22,7 +26,7 @@
   - START=yes
 * service puppetmaster start
 
-# Set Up the PuppetNode
+# Set Up the PuppetNode VM
 * puppet agent is already installed 
 * edit /etc/hosts 
   - 10.20.1.3       puppetmaster.example.com puppetmaster

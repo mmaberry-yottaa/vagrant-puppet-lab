@@ -1,1 +1,0 @@
-{"virtualbox":{"/var/www/html/www.dev.myhobbybazaar.int/public_html":{"guestpath":"/var/www/html/www.dev.myhobbybazaar.int/public_html","hostpath":"/Users/mike/repos/lab/html","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"/Users/mike/repos/lab","disabled":false,"__vagrantfile":true}}}

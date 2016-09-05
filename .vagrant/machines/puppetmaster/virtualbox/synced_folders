@@ -1,1 +1,0 @@
-{"virtualbox":{"/puppet":{"guestpath":"/puppet","hostpath":"/Users/mike/repos/lab/puppet","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"/Users/mike/repos/lab","disabled":false,"__vagrantfile":true}}}

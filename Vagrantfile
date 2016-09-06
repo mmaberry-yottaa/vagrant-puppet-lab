@@ -14,6 +14,6 @@ Vagrant.configure('2') do |config|
     node.vm.host_name = ENV['www-host']
     node.vm.network :private_network, :ip => '10.20.1.3'
     node.vm.network "forwarded_port", guest: 80, host: 8080
-    node.vm.synced_folder "html/", "/var/www/html/www.dev.example.com/public_html"
+    node.vm.synced_folder "html/",ENV['html_dir']
   end
 end

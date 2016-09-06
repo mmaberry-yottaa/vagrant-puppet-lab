@@ -4,11 +4,7 @@ Vagrant.configure('2') do |config|
     node.vm.box = "ubuntu/trusty64"
     node.vm.host_name = ENV['puppet-host']
     node.vm.network :private_network, :ip => '10.20.1.2'
-<<<<<<< HEAD
-    node.vm.synced_folder "puppet/", "/etc/puppet/modules"
-=======
-     node.vm.synced_folder "puppet/", "/etc/puppet"
->>>>>>> 784291f2affab744ee1888754112dae57e1c1999
+    node.vm.synced_folder "puppet/", "/etc/puppet"
     node.vm.provision :hosts, :sync_hosts => true
 
   end
